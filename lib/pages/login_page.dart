@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 20.0,
                 ),
                 Text(
-                  "Welcome! $name",
+                  "Welcome $name",
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
