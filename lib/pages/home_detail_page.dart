@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:firest_app_yt/widgets/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -17,7 +16,9 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
         color: Colors.white,
@@ -34,9 +35,9 @@ class HomeDetailPage extends StatelessWidget {
                           shape: MaterialStateProperty.all(
                             StadiumBorder(),
                           )),
-                      child: "Buy".text.make())
-                  .wh(100, 50)
-            ]).p32(),
+                      child: "Add to cart".text.make())
+                  .wh(120, 50)
+            ]).p20(),
       ),
       body: SafeArea(
         bottom: false,
@@ -61,6 +62,11 @@ class HomeDetailPage extends StatelessWidget {
                         .make(),
                     catalog.desc.text.textStyle(context.captionStyle).xl.make(),
                     10.heightBox,
+                    "Est diam sanctus et sit no sed, takimata ipsum ut rebum duo vero sit dolore ipsum kasd.takimata ipsum ut rebum duo vero sit dolore ipsum kasd.takimata ipsum ut rebum duo vero sit dolore ipsum kasd.takimata ipsum ut rebum duo vero sit dolore ipsum kasd. Invidunt consetetur clita"
+                        .text
+                        .textStyle(context.captionStyle)
+                        .make()
+                        .p16()
                   ]).py64(),
                 ),
               ),
