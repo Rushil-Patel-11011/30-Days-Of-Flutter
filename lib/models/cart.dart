@@ -1,9 +1,6 @@
 import 'package:firest_app_yt/models/catalog.dart';
 
 class CartModel {
-  static final cartModel = CartModel._internal();
-  CartModel._internal();
-  factory CartModel() => cartModel;
 
   late CatalogModel _catalog;
 
